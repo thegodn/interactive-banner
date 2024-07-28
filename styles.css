@@ -1,26 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
 .container {
     display: flex;
+    flex-direction: row;
+    height: 100vh; /* Tam ekran yüksekliği */
 }
-.image-container {
-    width: 50%;
-    position: relative;
-}
-.banner-image {
-    position: absolute;
+
+.image-section img {
     width: 100%;
-    height: auto;
-    display: none;
+    height: 100%;
+    object-fit: cover; /* Görselin sığması için */
 }
-.banner-image.active {
-    display: block;
-}
-.text-container {
-    width: 50%;
-    background-color: #6D7664;
+
+.text-section {
+    background-color: #E6E9E6; /* Daha açık bir renk tonu */
+    width: 40%; /* Sağ tarafın genişliği */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 20px;
-    color: white;
 }
-.category:hover {
-    cursor: pointer;
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.button-explore {
+    background-color: #FFFFFF;
+    color: #4B4B4B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #4B4B4B;
+    text-align: center;
     font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 20px;
 }
