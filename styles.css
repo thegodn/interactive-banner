@@ -6,24 +6,30 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    height: 100vh; /* Tam ekran yüksekliği */
+}
+
+.image-section {
+    flex: 1;
 }
 
 .image-section img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Görselin sığması için */
+    object-fit: cover;
 }
 
 .text-section {
-    background-color: #D3D7CF; /* Daha açık bir renk tonu */
+    background-color: #E8E8E8; /* Daha açık renk tonu */
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     padding: 20px;
     color: #333;
-    box-sizing: border-box; /* Paddingleri genişliğe dahil etmek için */
+    box-sizing: border-box;
+    height: 100vh; /* Görselle aynı yükseklik */
+    overflow: hidden;
 }
 
 .category-link {
